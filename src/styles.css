@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: "Borel", cursive;
+  font-family: "Caveat", cursive;
+  font-family: "Dongle", sans-serif;
+  font-family: "Indie Flower", cursive;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-family: "Rubik", sans-serif;
+}

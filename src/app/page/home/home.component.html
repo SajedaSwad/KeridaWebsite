@@ -1,0 +1,20 @@
+<div>
+  <header><h1>KeridaWebsite</h1></header>
+  <!-- category list  -->
+  <div class="select-container">
+    <select class="custom-select">
+      <option selected>Select Category</option>
+      <option *ngFor="let cl of categoryList">{{ cl | titlecase }}</option>
+    </select>
+  </div>
+  <!-- show-data -->
+  <div class="row">
+    <div class="col-lg-3 col-12" *ngFor="let item of showAllData">
+      <div class="box">
+        <h2>{{ item.name |titlecase}}</h2>
+        <p>📔{{ item.category |titlecase}}|{{ item.type |titlecase}}</p>
+        <a href="{{ item.url }}">Visit site 👀</a>
+      </div>
+    </div>
+  </div>
+</div>
