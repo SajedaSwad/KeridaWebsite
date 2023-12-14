@@ -9,20 +9,43 @@ import { ApiserviceService } from '../apiservice.service';
 export class HomeComponent {
   constructor(private service: ApiserviceService) {}
 
-  categoryList:any= ['all','finance','hosting','course','travel','product','ecommerce'];
- showAllData:any=[];
- 
+  categoryList: string[] = [
+    'all',
+    'finance',
+    'hosting',
+    'course',
+    'travel',
+    'product',
+    'ecommerce',
+  ];
+  showAllData: string[] = [];
+  filterName: string;
+  filterData: string[] = [];
+  showData: boolean = false;
+
   ngOnInit(): void {
     this.homeData();
   }
-  homeData(){
+  homeData() {
     this.service.homeapi().subscribe((result) => {
-      console.log('resdata', result);
-      if(result.length > 0){
+      if (result.length > 0) {
         this.showAllData = result;
-        
+        this.showData = true;
       }
     });
-    
+  }
+  onChange(e) {
+    this.filterName = e.target.value;
+    this.filterData = [];
+    this.showData = false;
+    this.showAllData.filter((element: any) => {
+      if (this.filterName == 'All') {
+        this.filterData.push(element);
+      } else {
+        element.category == this.filterName.toLowerCase()
+          ? this.filterData.push(element)
+          : null;
+      }
+    });
   }
 }

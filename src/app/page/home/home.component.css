@@ -1,117 +1,114 @@
-header{
-    background-image: url('../../../ww.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-   background-size: cover;
-   height: 300px;
-   /* margin: 0% 0%; */
-   border-radius: 5px;
-   position: relative;
-   user-select: none;
+header {
+  background-image: url("../../../ww.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  /* margin: 0% 0%; */
+  border-radius: 5px;
+  position: relative;
+  user-select: none;
 }
 header h1 {
-    font-size: 50px;
-    text-align: center;
-    padding: 32% 0%;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    position: absolute;
-    top: -110%;
-    left: 15%;
+  font-size: 50px;
+  text-align: center;
+  padding: 32% 0%;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  position: absolute;
+  top: -110%;
+  left: 15%;
 }
-@media screen and (max-width :600px){
-    header h1 {
-        font-size: 30px;
-        padding: 100% 0%;
-        }
-    
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 30px;
+    padding: 100% 0%;
+  }
 }
 
 .select-container {
-    width: 200px; /* Adjust width as needed */
-    margin: 20px;
-  }
-  
-  .custom-select {
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
-    cursor: pointer;
-  }
-  
-  .custom-select:focus {
-    outline: none;
-    border-color: #ff8000; /* Change color on focus if needed */
-  }
-  
-  /* Style the dropdown arrow */
-  .custom-select:after {
-    content: '\25BC'; /* Unicode for down arrow */
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    pointer-events: none;
-  }
-  /* Basic styles for the grid layout and box */
+  width: 200px; /* Adjust width as needed */
+  margin: 20px;
+}
+
+.custom-select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.custom-select:focus {
+  outline: none;
+  border-color: #ff8000; /* Change color on focus if needed */
+}
+
+/* Style the dropdown arrow */
+.custom-select:after {
+  content: "\25BC"; /* Unicode for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+/* Basic styles for the grid layout and box */
 .row {
-    user-select: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 10px 50px;
-    /* max-width: 1200px;  */
-    /* Adjust max width as needed */
-  }
-  
-  .col-md-4 {
-    flex: 0 0 calc(33.3333% - 20px); /* Adjust column width and margin */
-    margin: 10px;
-  }
-  
-  .box {
-    user-select: none;
-    width: max-content;
-    min-width: 200px;
-    margin:12px;
-    /* max-width: max-content; */
-    border: 1px  solid  rgb(207, 88, 14) ;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  .box:hover{
-    cursor: pointer;
- background-color:rgb(253, 216, 179) ;
- transition: .7s;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-  
-  a {
-    display: inline-block;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: #000000;
-    background-color: #e36f22;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  a:hover {
-    background-color: #b35f00;
-  }
-  
-  
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 50px;
+  /* max-width: 1200px;  */
+  /* Adjust max width as needed */
+}
+
+.col-md-4 {
+  flex: 0 0 calc(33.3333% - 20px); /* Adjust column width and margin */
+  margin: 10px;
+}
+
+.box {
+  user-select: none;
+  width: max-content;
+  min-width: 200px;
+  margin: 12px;
+  /* max-width: max-content; */
+  border: 1px solid rgb(207, 88, 14);
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.box:hover {
+  cursor: pointer;
+  background-color: rgb(253, 216, 179);
+  transition: 0.7s;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+a {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #e36f22;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #b35f00;
+}
